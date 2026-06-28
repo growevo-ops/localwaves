@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#7c0f4a">
+<title>Local Waves — E-bike Rental & Surf Lessons in Da Nang</title>
+<meta name="description" content="Local Waves Da Nang: VinFast e-motorbike rental from ~$3.5/day and surf lessons & private tours. Book on WhatsApp.">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <img class="logo-img" src="img/logo.png" alt="Local Waves logo">
+    <div>
+      <strong>LOCAL WAVES</strong>
+      <small data-i18n="tagline">Surf • Sun • Sand · Da Nang</small>
+    </div>
+  </div>
+  <div class="lang">
+    <button class="lang-btn active" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="ru">RU</button>
+  </div>
+</header>
+
+<section class="hero" style="background-image:linear-gradient(160deg,rgba(124,15,74,.86),rgba(93,10,55,.92)),url('img/bikes_row.jpg')">
+  <h1 data-i18n="hero_title">Explore Da Nang your way</h1>
+  <p data-i18n="hero_sub">Eco e-motorbike rentals & surf lessons. Green rides, happy tides 🌊</p>
+  <div class="hero-cta">
+    <button class="btn btn-light" data-go="bikes" data-i18n="hero_bikes">🛵 Rent an e-bike</button>
+    <button class="btn btn-light" data-go="surf" data-i18n="hero_surf">🏄 Surf lessons</button>
+  </div>
+</section>
+
+<nav class="tabs">
+  <button class="tab active" data-target="bikes" data-i18n="tab_bikes">E-bike rental</button>
+  <button class="tab" data-target="surf" data-i18n="tab_surf">Surf & tours</button>
+</nav>
+
+<!-- BIKES -->
+<section id="bikes" class="panel">
+  <img class="banner" src="img/bike.jpg" alt="VinFast electric motorbike">
+  <h2 data-i18n="bikes_h">VinFast electric motorbike</h2>
+  <p class="muted" data-i18n="bikes_p">Quiet, eco-friendly and easy to ride. No gas, no noise — just go.</p>
+
+  <div class="features">
+    <div class="feat"><span>⚡</span><b data-i18n="f_speed">50 km/h top speed</b></div>
+    <div class="feat"><span>🪪</span><b data-i18n="f_lic">No driver license needed</b></div>
+    <div class="feat"><span>🔋</span><b data-i18n="f_range">Up to 150 km per charge</b></div>
+    <div class="feat"><span>🪖</span><b data-i18n="f_helmet">Helmet & charger included</b></div>
+  </div>
+
+  <h3 data-i18n="price_h">Pricing</h3>
+  <div class="cards">
+    <div class="price-card"><div class="dur" data-i18n="b1d">1–3 days</div><div class="amt">130.000<span>₫/day</span></div><div class="usd">≈ $5 / day</div></div>
+    <div class="price-card"><div class="dur" data-i18n="b2d">4–10 days</div><div class="amt">100.000<span>₫/day</span></div><div class="usd">≈ $4 / day</div></div>
+    <div class="price-card best"><div class="tag" data-i18n="best">Best value</div><div class="dur" data-i18n="b3d">10+ days</div><div class="amt">90.000<span>₫/day</span></div><div class="usd">≈ $3.5 / day</div></div>
+    <div class="price-card"><div class="dur" data-i18n="b4d">1 month</div><div class="amt">1.850.000<span>₫</span></div><div class="usd">≈ $74 / month</div></div>
+  </div>
+  <button class="btn btn-primary wide" data-wa="bike" data-i18n="book_bike">Book an e-bike on WhatsApp</button>
+</section>
+
+<!-- SURF -->
+<section id="surf" class="panel hidden">
+  <img class="banner" src="img/surf.jpg" alt="Surf lesson in Da Nang">
+  <h2 data-i18n="surf_h">Surf lessons & private tours</h2>
+  <p class="muted" data-i18n="surf_p">Learn to ride real waves with a local coach. Beginners welcome.</p>
+
+  <div class="includes">
+    <b data-i18n="inc_h">Every lesson includes:</b>
+    <ul>
+      <li data-i18n="inc1">🏄 Professional surfing coach</li>
+      <li data-i18n="inc2">🛹 Surfboard</li>
+      <li data-i18n="inc3">💧 Water bottle</li>
+      <li data-i18n="inc4">👙 Swimsuit (if needed)</li>
+      <li data-i18n="inc5">📸 Free photos & video</li>
+    </ul>
+  </div>
+
+  <h3 data-i18n="price_h2">Pricing</h3>
+  <div class="cards">
+    <div class="price-card"><div class="dur" data-i18n="s_adult">Adult · 1–1.5h</div><div class="amt">1.000.000<span>₫</span></div><div class="usd">≈ $43 / person</div></div>
+    <div class="price-card"><div class="dur" data-i18n="s_kid">Kid · under 1.2m</div><div class="amt">700.000<span>₫</span></div><div class="usd">≈ $30 / person</div></div>
+    <div class="price-card best"><div class="tag" data-i18n="course_tag">8-lesson course</div><div class="dur" data-i18n="s_course">Special price</div><div class="amt">4.800.000<span>₫</span></div><div class="usd"><s>6.800.000₫</s> ≈ $206 / person</div></div>
+    <div class="price-card"><div class="dur" data-i18n="s_group">Groups 3–6</div><div class="amt">-10–20%</div><div class="usd" data-i18n="s_group_n">Group discount</div></div>
+  </div>
+
+  <div class="notes">
+    <b data-i18n="ttk">Things to know</b>
+    <ul>
+      <li data-i18n="ttk1">📍 Meet in front of Holiday Beach Hotel, 300 Vo Nguyen Giap St.</li>
+      <li data-i18n="ttk2">🌊 Exact spot depends on waves & weather.</li>
+      <li data-i18n="ttk3">🕒 Flexible hours — we fit your schedule.</li>
+      <li data-i18n="ttk4">🧴 Bring a towel and sunscreen.</li>
+    </ul>
+  </div>
+  <button class="btn btn-primary wide" data-wa="surf" data-i18n="book_surf">Book a surf lesson on WhatsApp</button>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+  <h2 data-i18n="contact_h">Get in touch</h2>
+  <div class="contact-grid">
+    <a href="tel:+84947746585" class="cbtn"><span>📞</span><span data-i18n="c_call">Call</span></a>
+    <a href="https://wa.me/84947746585" class="cbtn"><span>💬</span>WhatsApp</a>
+    <a href="https://www.instagram.com/localwaves.dn" class="cbtn"><span>📷</span>Instagram</a>
+    <a href="https://www.facebook.com/CLB.LuotSong.DaNang" class="cbtn"><span>👍</span>Facebook</a>
+    <a href="https://maps.app.goo.gl/fgmbRpVaabS8JtLu7" class="cbtn"><span>🗺️</span><span data-i18n="c_map">Directions</span></a>
+    <a href="mailto:Localwaves.dn@gmail.com" class="cbtn"><span>✉️</span>Email</a>
+  </div>
+  <p class="addr">📍 30 Ngo Thi Si, Ngu Hanh Son, Da Nang</p>
+</section>
+
+<footer>
+  <button id="installBtn" class="install hidden" data-i18n="install">⬇️ Install app</button>
+  <small>© Local Waves Da Nang · <span data-i18n="usd_note">USD prices are approximate</span></small>
+</footer>
+
+<a class="fab" href="https://wa.me/84947746585" aria-label="WhatsApp">💬</a>
+
+<script src="app.js"></script>
+</body>
+</html>
