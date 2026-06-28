@@ -50,13 +50,22 @@
   </div>
 
   <h3 data-i18n="price_h">Pricing</h3>
+  <p class="tap-hint" data-i18n="tap_hint">👆 Tap a plan to book it on WhatsApp</p>
   <div class="cards">
-    <div class="price-card"><div class="dur" data-i18n="b1d">1–3 days</div><div class="amt">130.000<span>₫/day</span></div><div class="usd">≈ $5 / day</div></div>
-    <div class="price-card"><div class="dur" data-i18n="b2d">4–10 days</div><div class="amt">100.000<span>₫/day</span></div><div class="usd">≈ $4 / day</div></div>
-    <div class="price-card best"><div class="tag" data-i18n="best">Best value</div><div class="dur" data-i18n="b3d">10+ days</div><div class="amt">90.000<span>₫/day</span></div><div class="usd">≈ $3.5 / day</div></div>
-    <div class="price-card"><div class="dur" data-i18n="b4d">1 month</div><div class="amt">1.850.000<span>₫</span></div><div class="usd">≈ $74 / month</div></div>
+    <div class="price-card" data-svc="bike" data-plan="b1d"><div class="dur" data-i18n="b1d">1–3 days</div><div class="amt">130.000<span>₫/day</span></div><div class="usd">≈ $5 / day</div></div>
+    <div class="price-card" data-svc="bike" data-plan="b2d"><div class="dur" data-i18n="b2d">4–10 days</div><div class="amt">100.000<span>₫/day</span></div><div class="usd">≈ $4 / day</div></div>
+    <div class="price-card best" data-svc="bike" data-plan="b3d"><div class="tag" data-i18n="best">Best value</div><div class="dur" data-i18n="b3d">10+ days</div><div class="amt">90.000<span>₫/day</span></div><div class="usd">≈ $3.5 / day</div></div>
+    <div class="price-card" data-svc="bike" data-plan="b4d"><div class="dur" data-i18n="b4d">1 month</div><div class="amt">1.850.000<span>₫</span></div><div class="usd">≈ $74 / month</div></div>
   </div>
   <button class="btn btn-primary wide" data-wa="bike" data-i18n="book_bike">Book an e-bike on WhatsApp</button>
+
+  <h3 data-i18n="gallery_h">Gallery</h3>
+  <div class="gallery">
+    <img src="img/bike.jpg" alt="E-bikes">
+    <img src="img/bikes_row.jpg" alt="E-bikes lineup">
+    <img src="img/bike_single.jpg" alt="VinFast e-bike">
+    <img src="img/bike_owner.jpg" alt="Local Waves">
+  </div>
 </section>
 
 <!-- SURF -->
@@ -77,11 +86,12 @@
   </div>
 
   <h3 data-i18n="price_h2">Pricing</h3>
+  <p class="tap-hint" data-i18n="tap_hint">👆 Tap a plan to book it on WhatsApp</p>
   <div class="cards">
-    <div class="price-card"><div class="dur" data-i18n="s_adult">Adult · 1–1.5h</div><div class="amt">1.000.000<span>₫</span></div><div class="usd">≈ $43 / person</div></div>
-    <div class="price-card"><div class="dur" data-i18n="s_kid">Kid · under 1.2m</div><div class="amt">700.000<span>₫</span></div><div class="usd">≈ $30 / person</div></div>
-    <div class="price-card best"><div class="tag" data-i18n="course_tag">8-lesson course</div><div class="dur" data-i18n="s_course">Special price</div><div class="amt">4.800.000<span>₫</span></div><div class="usd"><s>6.800.000₫</s> ≈ $206 / person</div></div>
-    <div class="price-card"><div class="dur" data-i18n="s_group">Groups 3–6</div><div class="amt">-10–20%</div><div class="usd" data-i18n="s_group_n">Group discount</div></div>
+    <div class="price-card" data-svc="surf" data-plan="adult"><div class="dur" data-i18n="s_adult">Adult · 1–1.5h</div><div class="amt">1.000.000<span>₫</span></div><div class="usd">≈ $43 / person</div></div>
+    <div class="price-card" data-svc="surf" data-plan="kid"><div class="dur" data-i18n="s_kid">Kid · under 1.2m</div><div class="amt">700.000<span>₫</span></div><div class="usd">≈ $30 / person</div></div>
+    <div class="price-card best" data-svc="surf" data-plan="course"><div class="tag" data-i18n="course_tag">8-lesson course</div><div class="dur" data-i18n="s_course">Special price</div><div class="amt">4.800.000<span>₫</span></div><div class="usd"><s>6.800.000₫</s> ≈ $206 / person</div></div>
+    <div class="price-card" data-svc="surf" data-plan="group"><div class="dur" data-i18n="s_group">Groups 3–6</div><div class="amt">-10–20%</div><div class="usd" data-i18n="s_group_n">Group discount</div></div>
   </div>
 
   <div class="notes">
@@ -94,6 +104,11 @@
     </ul>
   </div>
   <button class="btn btn-primary wide" data-wa="surf" data-i18n="book_surf">Book a surf lesson on WhatsApp</button>
+
+  <h3 data-i18n="gallery_h">Gallery</h3>
+  <div class="gallery">
+    <img src="img/surf.jpg" alt="Surf lesson">
+  </div>
 </section>
 
 <!-- CONTACT -->
@@ -116,6 +131,8 @@
 </footer>
 
 <a class="fab" href="https://wa.me/84947746585" aria-label="WhatsApp">💬</a>
+
+<div id="lightbox" class="lightbox hidden"><img id="lightbox-img" src="" alt=""></div>
 
 <script src="app.js"></script>
 </body>

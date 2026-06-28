@@ -1,7 +1,8 @@
-const CACHE='localwaves-v2';
+const CACHE='localwaves-v3';
 const ASSETS=['./','./index.html','./styles.css','./app.js','./manifest.json',
   './icons/icon-192.png','./icons/icon-512.png',
-  './img/logo.png','./img/bike.jpg','./img/surf.jpg','./img/bikes_row.jpg'];
+  './img/logo.png','./img/bike.jpg','./img/surf.jpg','./img/bikes_row.jpg',
+  './img/bike_single.jpg','./img/bike_owner.jpg'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)));self.skipWaiting();});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==CACHE).map(k=>caches.delete(k)))));self.clients.claim();});
 self.addEventListener('fetch',e=>{
