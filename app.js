@@ -5,7 +5,7 @@ const WA = {"bike": {"en": "Hello Local Waves! 🛵 I'd like to RENT AN E-BIKE. 
 const PLANS = {"b1d": {"en": "1–3 days (~$5/day)", "vi": "1–3 ngày (~$5/ngày)"}, "b2d": {"en": "4–10 days (~$4/day)", "vi": "4–10 ngày (~$4/ngày)"}, "b3d": {"en": "10+ days (~$3.5/day)", "vi": "10+ ngày (~$3.5/ngày)"}, "b4d": {"en": "1 month (~$74)", "vi": "1 tháng (~$74)"}, "adult": {"en": "Adult lesson, 1–1.5h (~$43/person)", "vi": "Người lớn, 1–1.5h (~$43/người)"}, "kid": {"en": "Kid lesson (~$30/person)", "vi": "Trẻ em (~$30/người)"}, "course": {"en": "8-lesson course (~$206/person)", "vi": "Khóa 8 buổi (~$206/người)"}, "group": {"en": "Group 3–6 (10–20% off)", "vi": "Nhóm 3–6 (giảm 10–20%)"}};
 
 const PHONE='84947746585';
-function waOpen(text){ window.open('https://wa.me/'+PHONE+'?text='+encodeURIComponent(text),'_blank'); }
+function waOpen(text){ var url='https://wa.me/'+PHONE+'?text='+encodeURIComponent(text),w=window.open(url,'_blank'); if(!w)location.href=url; }
 
 const SAVED = localStorage.getItem('lw_lang');
 let lang = SAVED || (navigator.language && navigator.language.toLowerCase().indexOf('vi')===0 ? 'vi' : 'en');
